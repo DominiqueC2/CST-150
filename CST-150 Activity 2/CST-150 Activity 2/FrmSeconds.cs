@@ -49,6 +49,13 @@ namespace CST_150_Activity_2
                     lblResults.Text = string.Format("There are {0:#,#} minute(s) in {1:#,#} seconds.\n", seconds / SecondsInMinutes, seconds);
                     lblResults.Visible = true;
                 }
+                else
+                {
+                    lblResults.Text = "Please enter an integer larger than 59.";
+                    lblResults.ForeColor = Color.Red;
+                    lblResults.Visible = true;
+
+                }
                 if (seconds >= SecondsInHours)
                 {
                     lblResults.Text += string.Format("There are {0:#,#} hours in {1:#,#} seconds.\n", seconds / SecondsInHours, seconds);
@@ -57,21 +64,14 @@ namespace CST_150_Activity_2
                     {
                         lblResults.Text += string.Format("There are {0:#,#} days in {1:#,#} seconds.\n", seconds / SecondsInDays, seconds);
                     }
-                    else
-                    {
-                        lblResults.Text = "Please enter an integer larger than 59.";
-                        lblResults.ForeColor = Color.Red;
-                        lblResults.Visible = true;
 
-                    }
                 }
-                else
-                {
-                    //This is the code block that be executed if the user did not put an int in
-                    lblResults.Text = "Please enter an int to continue...";
-                    lblResults.ForeColor = Color.Red;
-                    lblResults.Visible = true;
-                }
+            }
+            else
+            {//This is the code block that be executed if the user did not put an int in
+                lblResults.Text = "Please enter an int to continue...";
+                lblResults.ForeColor = Color.Red;
+                lblResults.Visible = true;
             }
 
         }
