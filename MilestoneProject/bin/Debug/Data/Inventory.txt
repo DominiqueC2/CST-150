@@ -1,0 +1,10 @@
+﻿Health Potion, 10, 5.00, Potion, Common
+Mana Potion, 8, 6.00, Potion, Common
+Iron Sword, 3, 25.00, Weapon, Uncommon
+Helmet, 5, 20.00, Armor, Common
+Chainmail, 4, 15.00, Armor, Uncommon
+Chocolate Cake, 7, 35.00, Food, Epic
+Easter Egg, 3, 5.00, Food, Rare
+Diamond Hoe, 3, 100.00, Tool, Epic
+Netherite Pickaxe, 2, 75.00, Tool, Legendary
+Holy Bible, 9, 10.00, Weapon, Legendary

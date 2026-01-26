@@ -1,0 +1,10 @@
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\obj\Debug\MilestoneProject.csproj.AssemblyReference.cache
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\obj\Debug\MilestoneProject.AdventureShop.resources
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\obj\Debug\MilestoneProject.Properties.Resources.resources
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\obj\Debug\MilestoneProject.csproj.GenerateResource.cache
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\obj\Debug\MilestoneProject.csproj.CoreCompileInputs.cache
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\bin\Debug\MilestoneProject.exe.config
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\bin\Debug\MilestoneProject.exe
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\bin\Debug\MilestoneProject.pdb
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\obj\Debug\MilestoneProject.exe
+C:\Users\dcana\source\repos\MilestoneProject\MilestoneProject\obj\Debug\MilestoneProject.pdb
