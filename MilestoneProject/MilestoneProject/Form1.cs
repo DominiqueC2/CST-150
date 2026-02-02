@@ -1,14 +1,15 @@
 ﻿/*
  * Dominique Canada
  * CST-150
- * 01/20/2026
- * Milestone 2
+ * 01/25/2026
+ * Milestone 3
  */
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,72 +24,146 @@ namespace MilestoneProject
             InitializeComponent();
         }
 
+        // Declare & Initialize For Everything
+        string[] description = new string[10];
+        int[] quantity = new int[10];
+        decimal[] costs = new decimal[10];
+        string[] itemTypes = new string[10];
+        string[] rarity = new string[10];
 
-        // Displays the hard-coded inventory when the button is clicked
+        string filePath = @"Data\Inventory.txt";
+
+
+        // Displays inventory loaded from the text file when the button is clicked
         private void BtnDisplayInt_Click(object sender, EventArgs e)
         {
-            lblDesc1.Text = "Health Potion";
-            lblQty1.Text = "10";
-            lblCost1.Text = "$5.00";
-            lblType1.Text = "Potion";
-            lblRar1.Text = "Common";
+            //simple & clean
+            // The Methods
+            LoadInventoryFromFile();
+            IncrementInventory();
+            SaveInventoryToFile();
+            DisplayInventory();
 
-            lblDesc2.Text = "Mana Potion";
-            lblQty2.Text = "8";
-            lblCost2.Text = "$6.00";
-            lblType2.Text = "Potion";
-            lblRar2.Text = "Common";
+        }
 
-            lblDesc3.Text = "Iron Sword";
-            lblQty3.Text = "3";
-            lblCost3.Text = "$25.00";
-            lblType3.Text = "Weapon";
-            lblRar3.Text = "Uncommon";
+        /// <summary>
+        /// Read the inventory txtfile
+        /// </summary>
+        private void LoadInventoryFromFile()
+        {
+            try
+            {
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    int index = 0;
+                    string line;
 
-            lblDesc4.Text = "Helmet";
-            lblQty4.Text = "5";
-            lblCost4.Text = "$20.00";
-            lblType4.Text = "Armor";
-            lblRar4.Text = "Common";
+                    while ((line = reader.ReadLine()) != null && index < 10)
+                    {
+                        string[] parts = line.Split(',');
 
-            lblDesc5.Text = "Chainmail";
-            lblQty5.Text = "4";
-            lblCost5.Text = "$15.00";
-            lblType5.Text = "Armor";
-            lblRar5.Text = "Uncommon";
+                        description[index] = parts[0];
+                        quantity[index] = int.Parse(parts[1]);
+                        costs[index] = decimal.Parse(parts[2]);
+                        itemTypes[index] = parts[3];
+                        rarity[index] = parts[4];
 
-            lblDesc6.Text = "Chocolate Cake";
-            lblQty6.Text = "7";
-            lblCost6.Text = "$35.00";
-            lblType6.Text = "Food";
-            lblRar6.Text = "Epic";
+                        index++;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error loading inventory file.");
+            }
+        }
 
-            lblDesc7.Text = "Easter Egg";
-            lblQty7.Text = "3";
-            lblCost7.Text = "$5.00";
-            lblType7.Text = "Food";
-            lblRar7.Text = "Rare";
+        /// <summary>
+        ///  increases the inventory quantity
+        /// </summary>
+        private void IncrementInventory()
+        {
+            quantity[0]++;
+        }
 
-            lblDesc8.Text = "Diamond Hoe";
-            lblQty8.Text = "3";
-            lblCost8.Text = "$100.00";
-            lblType8.Text = "Tool";
-            lblRar8.Text = "Epic";
+        /// <summary>
+        /// updated inventory file 
+        /// </summary>
+        private void SaveInventoryToFile()
+        {
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                for (int i = 0; i < description.Length; i++)
+                {
+                    writer.WriteLine($"{description[i]},{quantity[i]},{costs[i]},{itemTypes[i]},{rarity[i]}");
+                }
+            }
+        }
 
-            lblDesc9.Text = "Netherite Pickaxe";
-            lblQty9.Text = "2";
-            lblCost9.Text = "$75.00";
-            lblType9.Text = "Tool";
-            lblRar9.Text = "Legendary";
+        /// <summary>
+        /// inventory items to Display
+        /// </summary>
+        private void DisplayInventory()
+        {
+            lblDesc1.Text = description[0];
+            lblQty1.Text = quantity[0].ToString();
+            lblCost1.Text = "$" + costs[0].ToString("0.00");
+            lblType1.Text = itemTypes[0];
+            lblRar1.Text = rarity[0];
 
-            lblDesc10.Text = "Holy Bible";
-            lblQty10.Text = "9";
-            lblCost10.Text = "$10.00";
-            lblType10.Text = "Weapon";
-            lblRar10.Text = "Legendary";
+            lblDesc2.Text = description[1];
+            lblQty2.Text = quantity[1].ToString();
+            lblCost2.Text = "$" + costs[1].ToString("0.00");
+            lblType2.Text = itemTypes[1];
+            lblRar2.Text = rarity[1];
 
+            lblDesc3.Text = description[2];
+            lblQty3.Text = quantity[2].ToString();
+            lblCost3.Text = "$" + costs[2].ToString("0.00");
+            lblType3.Text = itemTypes[2];
+            lblRar3.Text = rarity[2];
 
+            lblDesc4.Text = description[3];
+            lblQty4.Text = quantity[3].ToString();
+            lblCost4.Text = "$" + costs[3].ToString("0.00");
+            lblType4.Text = itemTypes[3];
+            lblRar4.Text = rarity[3];
 
+            lblDesc5.Text = description[4];
+            lblQty5.Text = quantity[4].ToString();
+            lblCost5.Text = "$" + costs[4].ToString("0.00");
+            lblType5.Text = itemTypes[4];
+            lblRar5.Text = rarity[4];
+
+            lblDesc6.Text = description[5];
+            lblQty6.Text = quantity[5].ToString();
+            lblCost6.Text = "$" + costs[5].ToString("0.00");
+            lblType6.Text = itemTypes[5];
+            lblRar6.Text = rarity[5];
+
+            lblDesc7.Text = description[6];
+            lblQty7.Text = quantity[6].ToString();
+            lblCost7.Text = "$" + costs[6].ToString("0.00");
+            lblType7.Text = itemTypes[6];
+            lblRar7.Text = rarity[6];
+
+            lblDesc8.Text = description[7];
+            lblQty8.Text = quantity[7].ToString();
+            lblCost8.Text = "$" + costs[7].ToString("0.00");
+            lblType8.Text = itemTypes[7];
+            lblRar8.Text = rarity[7];
+
+            lblDesc9.Text = description[8];
+            lblQty9.Text = quantity[8].ToString();
+            lblCost9.Text = "$" + costs[8].ToString("0.00");
+            lblType9.Text = itemTypes[8];
+            lblRar9.Text = rarity[8];
+
+            lblDesc10.Text = description[9];
+            lblQty10.Text = quantity[9].ToString();
+            lblCost10.Text = "$" + costs[9].ToString("0.00");
+            lblType10.Text = itemTypes[9];
+            lblRar10.Text = rarity[9];
         }
     }
 }
