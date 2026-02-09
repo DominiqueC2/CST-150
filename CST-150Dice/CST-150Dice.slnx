@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../../../Workspace CST-150/Die1.bmp" />
+    <File Path="../../../Workspace CST-150/Die2.bmp" />
+    <File Path="../../../Workspace CST-150/Die3.bmp" />
+    <File Path="../../../Workspace CST-150/Die4.bmp" />
+    <File Path="../../../Workspace CST-150/Die5.bmp" />
+    <File Path="../../../Workspace CST-150/Die6.bmp" />
+  </Folder>
+  <Project Path="CST-150Dice/CST-150Dice.csproj" />
+</Solution>
