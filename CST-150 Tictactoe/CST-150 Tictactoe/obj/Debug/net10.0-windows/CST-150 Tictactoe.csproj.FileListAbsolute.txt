@@ -1,0 +1,16 @@
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST_150_Tictactoe.TicTacGame.resources
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.csproj.GenerateResource.cache
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.AssemblyInfoInputs.cache
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.AssemblyInfo.cs
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.csproj.CoreCompileInputs.cache
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\bin\Debug\net10.0-windows\CST-150 Tictactoe.exe
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\bin\Debug\net10.0-windows\CST-150 Tictactoe.deps.json
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\bin\Debug\net10.0-windows\CST-150 Tictactoe.runtimeconfig.json
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\bin\Debug\net10.0-windows\CST-150 Tictactoe.dll
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\bin\Debug\net10.0-windows\CST-150 Tictactoe.pdb
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.dll
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\refint\CST-150 Tictactoe.dll
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.pdb
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\CST-150 Tictactoe.genruntimeconfig.cache
+C:\Users\dcana\source\repos\CST-150 Tictactoe\CST-150 Tictactoe\obj\Debug\net10.0-windows\ref\CST-150 Tictactoe.dll

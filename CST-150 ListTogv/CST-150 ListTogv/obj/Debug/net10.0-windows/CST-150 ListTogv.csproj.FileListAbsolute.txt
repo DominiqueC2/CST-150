@@ -1,0 +1,17 @@
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\CST-150 ListTogv.exe
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\Data\Topic6.txt
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\CST-150 ListTogv.deps.json
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\CST-150 ListTogv.runtimeconfig.json
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\CST-150 ListTogv.dll
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\CST-150 ListTogv.pdb
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST_150_ListTogv.FrmInventory.resources
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.csproj.GenerateResource.cache
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.AssemblyInfoInputs.cache
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.AssemblyInfo.cs
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.csproj.CoreCompileInputs.cache
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.dll
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\refint\CST-150 ListTogv.dll
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.pdb
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.genruntimeconfig.cache
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\ref\CST-150 ListTogv.dll
