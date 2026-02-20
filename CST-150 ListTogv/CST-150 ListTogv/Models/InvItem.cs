@@ -8,7 +8,7 @@ namespace CST_150_ListTogv.Models
     /// Model vClass that will structure
     /// all my inventory items.
     /// </summary>
-    internal class InvItem
+    public class InvItem
     {
         // Define the properties
         public string Type { get; set; }

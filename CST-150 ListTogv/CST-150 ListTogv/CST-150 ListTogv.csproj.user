@@ -4,5 +4,8 @@
     <Compile Update="FrmInventory.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmSecondary.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

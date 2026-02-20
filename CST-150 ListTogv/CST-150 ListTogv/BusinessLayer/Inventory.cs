@@ -57,5 +57,30 @@ namespace CST_150_ListTogv.BusinessLayer
             // return the list
             return invItems;
         }
+
+        /// <summary>
+        /// Search the item in the main Inventory List and return the new search List
+        /// </summary>
+        /// <param name="invItems"></param>
+        /// <param name="searchItem"></param>
+        /// <param name="searchCriteria"></param>
+        /// <returns></returns>
+        public List<InvItem> SearchItem(List<InvItem> invItems,List<InvItem> invSearch, string searchCriteria)
+        {
+            // Make sure the invsearch List is cleared before we start.
+            invSearch.Clear();
+            // Now iterate over the main Inventory and see if can find
+            // any matches tothe search criteria
+            foreach (InvItem item in invItems) 
+            { 
+                if (item.Type.ToLower().Contains(searchCriteria.ToLower()))
+                {
+                    // If an item was found add it to the list 
+                    invSearch.Add(item);
+                }
+            }
+            //Return the end results
+            return invItems;
+        } 
     }
 }

@@ -1,6 +1,7 @@
 using CST_150_ListTogv.BusinessLayer;
 using CST_150_ListTogv.Models;
 
+
 namespace CST_150_ListTogv
 {
     public partial class FrmInventory : Form
@@ -10,6 +11,8 @@ namespace CST_150_ListTogv
         //This is our master inventory object that MUST
         // always contain the most update-to-date inventory
         List<InvItem> invItems = new List<InvItem>();
+        // List that will hold all  items found for search
+        List<InvItem> invSearch = new List<InvItem>();
 
         // Properties
         private int SelectedGridIndex { get; set; }
@@ -100,5 +103,54 @@ namespace CST_150_ListTogv
             gvInv.Refresh();
         }
 
+        /// <summary>
+        /// Delete an item from Inventory
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //We already know the selected row which is the index
+            // Make sure we remove the item from the master inventory
+            invItems.RemoveAt(SelectedGridIndex);
+            // We have to be careful when deleting item
+            // will get n out of range exception since
+            // is bound to the initial number of rows
+            // therefore we can not just refresh the data grid view 
+            // reset the datasource by clearing it out and setting it to null
+            gvInv.DataSource = null;
+            // laststep is to bind the new data back to the data grid
+            gvInv.DataSource = invItems;
+            // key--> nvItems still has the master inventory!!!!
+        }
+
+        /// <summary>
+        /// Search Event Handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            //Our goal is to read from the textbox and search the 
+            // list in the type column for a match. if there is
+            // a match or multiple matches then we show the match
+            // in the gridview on the secondary form
+            string searchFor = txtSearch.Text;
+            // Since the searching is logic - we need to do this
+            //in the business Layer
+            Inventory businessLayer = new Inventory();
+            // Search for the match and put result in the search list
+            invSearch = businessLayer.SearchItem(invItems, invSearch, searchFor);
+            // Send this invSearch over to the secondary form to be displayed
+            // make sure to setup the secondary form now....
+            FrmSecondary frmSecondary = new FrmSecondary(invSearch);
+            // now to show the form
+            // Notive .show() method
+            // YOu can click on the parent form.
+            // ShowDialog() shows the form modally ,
+            // go to the parent form 
+            frmSecondary.ShowDialog();
+
+        }
     }
 }

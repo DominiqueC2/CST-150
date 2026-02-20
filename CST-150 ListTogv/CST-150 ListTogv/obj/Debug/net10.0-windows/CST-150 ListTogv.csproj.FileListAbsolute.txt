@@ -5,6 +5,7 @@ C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-
 C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\CST-150 ListTogv.dll
 C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\bin\Debug\net10.0-windows\CST-150 ListTogv.pdb
 C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST_150_ListTogv.FrmInventory.resources
+C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST_150_ListTogv.FrmSecondary.resources
 C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.csproj.GenerateResource.cache
 C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dcana\source\repos\CST-150 ListTogv\CST-150 ListTogv\obj\Debug\net10.0-windows\CST-150 ListTogv.AssemblyInfoInputs.cache
