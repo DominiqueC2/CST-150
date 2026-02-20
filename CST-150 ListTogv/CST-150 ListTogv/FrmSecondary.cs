@@ -35,5 +35,11 @@ namespace CST_150_ListTogv
         {
             gvSearchResults.DataSource = this.mySearch;
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            // Clase the Form
+            this.Close();
+        }
     }
 }

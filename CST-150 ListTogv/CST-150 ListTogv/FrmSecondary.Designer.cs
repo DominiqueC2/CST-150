@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             gvSearchResults = new DataGridView();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)gvSearchResults).BeginInit();
             SuspendLayout();
             // 
@@ -40,11 +41,23 @@
             gvSearchResults.Size = new Size(552, 150);
             gvSearchResults.TabIndex = 0;
             // 
+            // btnClose
+            // 
+            btnClose.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClose.Location = new Point(327, 342);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(81, 32);
+            btnClose.TabIndex = 1;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
             // FrmSecondary
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnClose);
             Controls.Add(gvSearchResults);
             Name = "FrmSecondary";
             Text = "FrmSecondary";
@@ -56,5 +69,6 @@
         #endregion
 
         private DataGridView gvSearchResults;
+        private Button btnClose;
     }
 }
