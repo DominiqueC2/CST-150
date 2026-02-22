@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MilestoneProject.Models
 {
-    internal class InvItem
+    public class InvItem
     {
         public string Description { get; set; }
         public int Quantity { get; set; }

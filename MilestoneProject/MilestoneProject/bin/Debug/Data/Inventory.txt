@@ -1,12 +1,10 @@
-Health Potion,13,5.00,Potion,Common
-Mana Potion,10,6.00,Potion,Common
+Health Potion,11,5.00,Potion,Common
+Mana Potion,11,6.00,Potion,Common
 Iron Sword,5,25.00,Weapon,Uncommon
-Helmet,7,20.00,Armor,Common
 Chainmail,6,15.00,Armor,Uncommon
 Chocolate Cake,9,35.00,Food,Epic
 Easter Egg,5,5.00,Food,Rare
 Diamond Hoe,5,100.00,Tool,Epic
 Netherite Pickaxe,4,75.00,Tool,Legendary
 Holy Bible,11,10.00,Weapon,Legendary
-Test Item2,2,0.00,Debug,Common
-Please Delete Me,99,67.00,Debug,Uncommon
+Bobby,20,0,test,common

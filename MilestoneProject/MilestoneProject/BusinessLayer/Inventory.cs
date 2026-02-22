@@ -119,6 +119,68 @@ namespace MilestoneProject.BusinessLayer
             }
         }
 
+        /// <summary>
+        /// Search for the items
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public List<InvItem> SearchItems(string name)
+        {
+            return items
+                .Where(i => i.Description.ToLower().Contains(name.ToLower())
+                         || i.Type.ToLower().Contains(name.ToLower())
+                         || i.Rarity.ToLower().Contains(name.ToLower()))
+                .ToList();
+        }
+
+        /// <summary>
+        /// Sort the inventory 
+        /// </summary>
+        /// <param name="sortOption"></param>
+        /// <returns></returns>
+        public List<InvItem> SortItems(string sortOption)
+        {
+            switch (sortOption)
+            {
+                case "A-Z":
+                    return items.OrderBy(i => i.Description).ToList();
+
+                case "Z-A":
+                    return items.OrderByDescending(i => i.Description).ToList();
+
+                case "Qty Low to High":
+                    return items.OrderBy(i => i.Quantity).ToList();
+
+                case "Qty High to Low":
+                    return items.OrderByDescending(i => i.Quantity).ToList();
+
+                default:
+                    return items;
+            }
+        }
+
+        /// <summary>
+        /// Update selected items
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="desc"></param>
+        /// <param name="qty"></param>
+        /// <param name="cost"></param>
+        /// <param name="type"></param>
+        /// <param name="rarity"></param>
+        public void UpdateItem(int index, string desc, int qty, decimal cost, string type, string rarity)
+        {
+            if (index >= 0 && index < items.Count)
+            {
+                items[index].Description = desc;
+                items[index].Quantity = qty;
+                items[index].Cost = cost;
+                items[index].Type = type;
+                items[index].Rarity = rarity;
+
+                SaveInventoryToFile();
+            }
+        }
     }
 }
 
